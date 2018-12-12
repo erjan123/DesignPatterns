@@ -124,4 +124,44 @@ namespace Singleton
             Console.WriteLine("Logger 5: " + message);
         }
     }
+
+    // Lazy instantiation with Lazy<T>
+    public class Logger6
+    {
+        private static readonly Lazy<Logger6> instance =  new Lazy<Logger6>(() => new Logger6());
+
+        private Logger6() { }
+
+        public static Logger6 Instance
+        {
+            get { return instance.Value; }         
+        }
+
+        public void LogMessage(string message)
+        {
+            Console.WriteLine("Logger 6: " + message);
+        }
+    }
+
+    // Lazy instantiation with Nested classes
+    public class Logger7
+    {
+        Logger7() { }
+
+        public static Logger7 Instance { get { return Nested.instance; } }
+
+        private class Nested
+        {
+            static Nested()
+            {
+            }
+
+            internal static readonly Logger7 instance = new Logger7();
+        }
+
+        public void LogMessage(string message)
+        {
+            Console.WriteLine("Logger 7: " + message);
+        }
+    }
 }

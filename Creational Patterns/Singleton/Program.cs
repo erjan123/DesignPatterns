@@ -8,10 +8,10 @@ namespace Singleton
         {
             // Singleton with Static field implementation
             // Logger1 a = new Logger1(); - cannot create a new Logger
-            Logger1.GetInstance.LogMessage("Please Log this message!");
+            Logger1.GetInstance.LogMessage("Singleton with Static field.");
 
             // GetInstance() method returns the only single Logger2 instance
-            Logger2.GetInstance().LogMessage("Can you Log this message?");
+            Logger2.GetInstance().LogMessage("With  GetInstance()  method.");
 
             // Simple Thread safe implementation
             Logger3.GetInstance.LogMessage("Thread-safe implementation.");
@@ -21,6 +21,13 @@ namespace Singleton
 
             // Thread-safety without lock
             Logger5.Instance.LogMessage("Thread-safety without lock.");
+
+            // Lazy instantiation with Lazy<T> 
+            Logger6.Instance.LogMessage("Lazy instantiation with Lazy<T> ");
+
+            // Lazy instantiation with Nested classes
+            Logger7.Instance.LogMessage("Lazy instantiation with Nested classes.");
+
 
             Console.Read();
         }
