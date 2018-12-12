@@ -2,7 +2,7 @@
 
 namespace Singleton
 {
-    class Program
+    public static class Singleton
     {
         static void Main(string[] args)
         {
