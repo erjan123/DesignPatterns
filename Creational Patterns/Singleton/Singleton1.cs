@@ -2,15 +2,16 @@
 
 namespace Singleton
 {
+    // Singleton with Static field implementation
     public class Logger1
     {
-        // Singleton with Static field implementation
-        static Logger1 instance;
-        private Logger1 () { } // Private constructor - nobody can create (instantiate) an
+        static readonly Logger1 instance = null;
+
+        private Logger1() { } // Private constructor - nobody can create (instantiate) an
                               // Logger1 Object
 
         // Property that returns the only Logger1 instance
-        public static Logger1 Instance
+        public static Logger1 GetInstance
         {
             get
             {
@@ -24,10 +25,11 @@ namespace Singleton
         }
     }
 
+    // GetInstance() method returns the single instance
     public class Logger2
     {
-        // This time we are going to use a method to return the same instance
-        static Logger2 instance;
+
+        static readonly Logger2 instance = null;
 
         private Logger2() { }
 
@@ -40,6 +42,86 @@ namespace Singleton
         {
             Console.WriteLine("Logger 2: " + message);
         }
+    }
 
+    // Simple Thread safe implementation
+    public class Logger3
+    {
+        static readonly Logger3 instance = null;
+        public static readonly object padlock = new object();
+
+        private Logger3() { } // Private constructor - nobody can create (instantiate) an
+                              // Logger3 Object
+
+        // Property that returns the only Logger3 instance
+        public static Logger3 GetInstance
+        {
+            get
+            {
+                lock (padlock)
+                {
+                    return instance != null ? instance : new Logger3();
+                }
+            }
+        }
+
+        public void LogMessage(string message)
+        {
+            Console.WriteLine("Logger 3: " + message);
+        }
+    }
+
+    // Thread safety with double check
+    public class Logger4
+    {
+        static readonly Logger4 instance = null;
+        public static readonly object padlock = new object();
+
+        Logger4() { } // Private constructor 
+
+        // Property that returns the only Logger4 instance
+        public static Logger4 GetInstance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    lock (padlock)
+                    {
+                        if (instance == null)
+                            return new Logger4();
+                    }
+                }
+
+                return instance;
+            }
+        }
+
+        public void LogMessage(string message)
+        {
+            Console.WriteLine("Logger 4: " + message);
+        }
+    }
+
+    // Thread-safety without lock
+    public sealed class Logger5
+    {
+        private static readonly Logger5 instance = new Logger5();
+
+        static Logger5() { }
+        Logger5() { }
+
+        public static Logger5 Instance
+        {
+            get
+            {
+                return instance;
+            }
+        }
+
+        public void LogMessage(string message)
+        {
+            Console.WriteLine("Logger 5: " + message);
+        }
     }
 }
