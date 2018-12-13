@@ -3,7 +3,7 @@
 namespace Singleton
 {
     // Singleton with Static field implementation
-    public class Logger1
+    public sealed class Logger1
     {
         static readonly Logger1 instance = null;
 
@@ -26,7 +26,7 @@ namespace Singleton
     }
 
     // GetInstance() method returns the single instance
-    public class Logger2
+    public sealed class Logger2
     {
 
         static readonly Logger2 instance = null;
@@ -45,7 +45,7 @@ namespace Singleton
     }
 
     // Simple Thread safe implementation
-    public class Logger3
+    public sealed class Logger3
     {
         static readonly Logger3 instance = null;
         public static readonly object padlock = new object();
@@ -72,7 +72,7 @@ namespace Singleton
     }
 
     // Thread safety with double check
-    public class Logger4
+    public sealed class Logger4
     {
         static readonly Logger4 instance = null;
         public static readonly object padlock = new object();
@@ -126,7 +126,7 @@ namespace Singleton
     }
 
     // Lazy instantiation with Lazy<T>
-    public class Logger6
+    public sealed class Logger6
     {
         private static readonly Lazy<Logger6> instance =  new Lazy<Logger6>(() => new Logger6());
 
@@ -144,7 +144,7 @@ namespace Singleton
     }
 
     // Lazy instantiation with Nested classes
-    public class Logger7
+    public sealed class Logger7
     {
         Logger7() { }
 
