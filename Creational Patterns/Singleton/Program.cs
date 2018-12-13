@@ -22,6 +22,12 @@ namespace Singleton
             // Thread-safety without lock
             Logger5.Instance.LogMessage("Thread-safety without lock.");
 
+            // Thread-safety without lock - using propertiy with lambda
+            Logger5b.Instance.LogMessage("Thread-safety without lock - using propertiy with lambda");
+
+            // Thread-safety without lock - with auto property
+            Logger5c.Instance.LogMessage("Thread-safety without lock - with auto property");
+
             // Lazy instantiation with Lazy<T> 
             Logger6.Instance.LogMessage("Lazy instantiation with Lazy<T> ");
 

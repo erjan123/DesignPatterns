@@ -125,6 +125,36 @@ namespace Singleton
         }
     }
 
+    // Thread-safety without lock - using propertiy with lambda
+    public sealed class Logger5b
+    {
+        private static readonly Logger5b instance = new Logger5b();
+
+        static Logger5b() { }
+        Logger5b() { }
+
+        public static Logger5b Instance => instance;
+
+        public void LogMessage(string message)
+        {
+            Console.WriteLine("Logger 5b: " + message);
+        }
+    }
+
+    // Thread-safety without lock - with auto property
+    public sealed class Logger5c
+    {
+        static Logger5c() { }
+        Logger5c() { }
+
+        public static Logger5c Instance { get; } = new Logger5c();
+
+        public void LogMessage(string message)
+        {
+            Console.WriteLine("Logger 5c: " + message);
+        }
+    }
+
     // Lazy instantiation with Lazy<T>
     public sealed class Logger6
     {
@@ -164,4 +194,6 @@ namespace Singleton
             Console.WriteLine("Logger 7: " + message);
         }
     }
+
+
 }
