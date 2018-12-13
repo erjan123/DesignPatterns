@@ -52,8 +52,9 @@ namespace Singleton
     // Simple Thread safe implementation
     public sealed class Logger3
     {
-        static readonly Logger3 instance = null;
-        public static readonly object padlock = new object();
+        static Logger3 instance = null;
+        public static  object padlock = new object();
+        public int Counter { get; set; }
 
         private Logger3() { } // Private constructor - nobody can create (instantiate) an
                               // Logger3 Object
@@ -65,7 +66,10 @@ namespace Singleton
             {
                 lock (padlock)
                 {
-                    return instance != null ? instance : new Logger3();
+                    if(instance == null)
+                        instance = new Logger3();
+
+                    return instance;
                 }
             }
         }
@@ -79,8 +83,9 @@ namespace Singleton
     // Thread safety with double check
     public sealed class Logger4
     {
-        static readonly Logger4 instance = null;
+        private static Logger4 instance = null;
         public static readonly object padlock = new object();
+        public int Counter { get; set; }
 
         Logger4() { } // Private constructor 
 
@@ -94,10 +99,9 @@ namespace Singleton
                     lock (padlock)
                     {
                         if (instance == null)
-                            return new Logger4();
+                            instance = new Logger4();
                     }
                 }
-
                 return instance;
             }
         }
@@ -112,11 +116,12 @@ namespace Singleton
     public sealed class Logger5
     {
         private static readonly Logger5 instance = new Logger5();
+        public int Counter { get; set; }
 
         static Logger5() { }
         Logger5() { }
 
-        public static Logger5 Instance
+        public static Logger5 GetInstance
         {
             get
             {
@@ -134,11 +139,12 @@ namespace Singleton
     public sealed class Logger5b
     {
         private static readonly Logger5b instance = new Logger5b();
+        public int Counter { get; set; }
 
         static Logger5b() { }
         Logger5b() { }
 
-        public static Logger5b Instance => instance;
+        public static Logger5b GetInstance => instance;
 
         public void LogMessage(string message)
         {
@@ -149,10 +155,11 @@ namespace Singleton
     // Thread-safety without lock - with auto property
     public sealed class Logger5c
     {
+        public int Counter { get; set; }
         static Logger5c() { }
         Logger5c() { }
 
-        public static Logger5c Instance { get; } = new Logger5c();
+        public static Logger5c GetInstance { get; } = new Logger5c();
 
         public void LogMessage(string message)
         {
@@ -164,10 +171,11 @@ namespace Singleton
     public sealed class Logger6
     {
         private static readonly Lazy<Logger6> instance =  new Lazy<Logger6>(() => new Logger6());
+        public int Counter { get; set; }
 
         private Logger6() { }
 
-        public static Logger6 Instance
+        public static Logger6 GetInstance
         {
             get { return instance.Value; }         
         }
@@ -183,7 +191,8 @@ namespace Singleton
     {
         Logger7() { }
 
-        public static Logger7 Instance { get { return Nested.instance; } }
+        public static Logger7 GetInstance { get { return Nested.instance; } }
+        public int Counter { get; set; }
 
         private class Nested
         {
@@ -199,6 +208,5 @@ namespace Singleton
             Console.WriteLine("Logger 7: " + message);
         }
     }
-
 
 }

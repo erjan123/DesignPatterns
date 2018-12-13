@@ -20,19 +20,19 @@ namespace Singleton
             Logger4.GetInstance.LogMessage("Thread-safety with double Check.");
 
             // Thread-safety without lock
-            Logger5.Instance.LogMessage("Thread-safety without lock.");
+            Logger5.GetInstance.LogMessage("Thread-safety without lock.");
 
             // Thread-safety without lock - using propertiy with lambda
-            Logger5b.Instance.LogMessage("Thread-safety without lock - using propertiy with lambda");
+            Logger5b.GetInstance.LogMessage("Thread-safety without lock - using propertiy with lambda");
 
             // Thread-safety without lock - with auto property
-            Logger5c.Instance.LogMessage("Thread-safety without lock - with auto property");
+            Logger5c.GetInstance.LogMessage("Thread-safety without lock - with auto property");
 
             // Lazy instantiation with Lazy<T> 
-            Logger6.Instance.LogMessage("Lazy instantiation with Lazy<T> ");
+            Logger6.GetInstance.LogMessage("Lazy instantiation with Lazy<T> ");
 
             // Lazy instantiation with Nested classes
-            Logger7.Instance.LogMessage("Lazy instantiation with Nested classes.");
+            Logger7.GetInstance.LogMessage("Lazy instantiation with Nested classes.");
 
 
             Console.Read();

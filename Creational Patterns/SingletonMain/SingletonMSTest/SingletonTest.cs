@@ -29,5 +29,89 @@ namespace SingletonMSTest
             instance2.Counter++;
             Assert.AreEqual(instance1.Counter, instance2.Counter);
         }
+
+        [TestMethod]
+        public void Logger3Test()
+        {
+            Logger3 instance1 = Logger3.GetInstance;
+            Logger3 instance2 = Logger3.GetInstance;
+            Assert.AreSame(instance1, instance2);
+            instance1.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+        }
+
+        [TestMethod]
+        public void Logger4Test()
+        {
+            Logger4 instance1 = Logger4.GetInstance;
+            Logger4 instance2 = Logger4.GetInstance;
+            Assert.AreSame(instance1, instance2);
+            instance1.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+        }
+
+        [TestMethod]
+        public void Logger5Test()
+        {
+            Logger5 instance1 = Logger5.GetInstance;
+            Logger5 instance2 = Logger5.GetInstance;
+            Assert.AreSame(instance1, instance2);
+            instance1.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+        }
+
+        [TestMethod]
+        public void Logger5bTest()
+        {
+            Logger5b instance1 = Logger5b.GetInstance;
+            Logger5b instance2 = Logger5b.GetInstance;
+            Assert.AreSame(instance1, instance2);
+            instance1.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+        }
+
+        [TestMethod]
+        public void Logger5cTest()
+        {
+            Logger5c instance1 = Logger5c.GetInstance;
+            Logger5c instance2 = Logger5c.GetInstance;
+            Assert.AreSame(instance1, instance2);
+            instance1.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+        }
+
+        [TestMethod]
+        public void Logger6Test()
+        {
+            Logger6 instance1 = Logger6.GetInstance;
+            Logger6 instance2 = Logger6.GetInstance;
+            Assert.AreSame(instance1, instance2);
+            instance1.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+        }
+
+        [TestMethod]
+        public void Logger7Test()
+        {
+            Logger7 instance1 = Logger7.GetInstance;
+            Logger7 instance2 = Logger7.GetInstance;
+            Assert.AreSame(instance1, instance2);
+            instance1.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+        }
     }
 }
