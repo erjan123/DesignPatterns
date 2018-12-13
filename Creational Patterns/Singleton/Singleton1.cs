@@ -5,8 +5,8 @@ namespace Singleton
     // Singleton with Static field implementation
     public sealed class Logger1
     {
-        static readonly Logger1 instance = null;
-
+        static Logger1 instance = null;
+        public int counter = 0; 
         private Logger1() { } // Private constructor - nobody can create (instantiate) an
                               // Logger1 Object
 
@@ -15,7 +15,10 @@ namespace Singleton
         {
             get
             {
-                return instance != null ? instance : new Logger1();
+                if (instance == null)
+                    instance = new Logger1();
+
+                return instance;
             }
         }
 
