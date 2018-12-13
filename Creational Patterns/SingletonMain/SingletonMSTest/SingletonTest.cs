@@ -12,13 +12,22 @@ namespace SingletonMSTest
             Logger1 instance1 = Logger1.GetInstance;
             Logger1 instance2 = Logger1.GetInstance;
             Assert.AreSame(instance1, instance2);
+            instance1.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+        }
 
-            instance1.counter++;
-            Assert.AreEqual(instance1.counter, instance2.counter);
-
-            instance2.counter++;
-            Assert.AreEqual(instance1.counter, instance2.counter);
-
+        [TestMethod]
+        public void Logger2Test()
+        {
+            Logger2 instance1 = Logger2.GetInstance();
+            Logger2 instance2 = Logger2.GetInstance();
+            Assert.AreSame(instance1, instance2);
+            instance1.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
         }
     }
 }

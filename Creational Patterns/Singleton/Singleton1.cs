@@ -6,7 +6,7 @@ namespace Singleton
     public sealed class Logger1
     {
         static Logger1 instance = null;
-        public int counter = 0; 
+        public int Counter { get; set; }
         private Logger1() { } // Private constructor - nobody can create (instantiate) an
                               // Logger1 Object
 
@@ -31,14 +31,16 @@ namespace Singleton
     // GetInstance() method returns the single instance
     public sealed class Logger2
     {
-
-        static readonly Logger2 instance = null;
-
+        static Logger2 instance = null;
+        public int Counter { get; set; }
         private Logger2() { }
 
         public static Logger2 GetInstance()
         {
-            return instance != null ? instance : new Logger2();
+            if(instance == null)
+                instance = new Logger2();
+
+            return instance;
         }
 
         public void LogMessage(string message)
