@@ -11,7 +11,7 @@ namespace Singleton
 
     // Regular class that inherits ILogger with private constructor
     // and a Counter property to test the Singleton 
-    public class FileLogger : ILogger
+    public sealed class FileLogger : ILogger
     {
         public int Counter { get; set; } // Created to test FileLogger Singleton
 
@@ -25,7 +25,7 @@ namespace Singleton
 
     // Regular class that inherits ILogger with private constructor
     // and a Counter property to test the Singleton 
-    public class EventLogger : ILogger
+    public sealed class EventLogger : ILogger
     {
         public int Counter { get; set; } // Created to test FileLogger Singleton
 
