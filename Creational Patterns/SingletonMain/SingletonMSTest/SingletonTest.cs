@@ -113,5 +113,30 @@ namespace SingletonMSTest
             instance2.Counter++;
             Assert.AreEqual(instance1.Counter, instance2.Counter);
         }
+
+        [TestMethod]
+        public void GenericLoggerTest8()
+        {
+            FileLogger instance1 = GenericLogger<FileLogger>.GetInstance();
+            FileLogger instance2 = GenericLogger<FileLogger>.GetInstance();
+            Assert.AreSame(instance1, instance2);
+            instance1.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+        }
+
+        [TestMethod]
+        public void GenericLoggerTest9()
+        {
+            EventLogger instance1 = GenericLogger<EventLogger>.GetInstance();
+            EventLogger instance2 = GenericLogger<EventLogger>.GetInstance();
+            Assert.AreSame(instance1, instance2);
+            instance1.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+        }
+
     }
 }

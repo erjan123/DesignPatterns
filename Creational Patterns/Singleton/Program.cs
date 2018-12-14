@@ -36,12 +36,12 @@ namespace Singleton
 
             /***********************************************************************************/
             //GenericLogger
-            Console.WriteLine("\r\n\r\nGeneric Loggers:");
+            Console.WriteLine("\r\n\r\nGeneric Logger:");
             FileLogger fileLoggerInstance = GenericLogger<FileLogger>.GetInstance();
-            fileLoggerInstance.Log("Log a file.");
+            fileLoggerInstance.Log("Log a file with FileLogger.");
 
             EventLogger eventLoggerInstance = GenericLogger<EventLogger>.GetInstance();
-            eventLoggerInstance.Log("Log an Event");
+            eventLoggerInstance.Log("Log an event with EventLogger.");
 
             Console.Read();
         }

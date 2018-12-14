@@ -1,6 +1,5 @@
-using System;
-using Xunit;
 using Singleton;
+using Xunit;
 
 namespace SingletonXUnitTest
 {
@@ -107,6 +106,30 @@ namespace SingletonXUnitTest
         {
             Logger7 instance1 = Logger7.GetInstance;
             Logger7 instance2 = Logger7.GetInstance;
+            Assert.Same(instance1, instance1);
+            instance1.Counter++;
+            Assert.Equal(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.Equal(instance1.Counter, instance2.Counter);
+        }
+
+        [Fact]
+        public void GenericLoggerTest8()
+        {
+            FileLogger instance1 = GenericLogger<FileLogger>.GetInstance();
+            FileLogger instance2 = GenericLogger<FileLogger>.GetInstance();
+            Assert.Same(instance1, instance1);
+            instance1.Counter++;
+            Assert.Equal(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.Equal(instance1.Counter, instance2.Counter);
+        }
+
+        [Fact]
+        public void GenericLoggerTest9()
+        {
+            EventLogger instance1 = GenericLogger<EventLogger>.GetInstance();
+            EventLogger instance2 = GenericLogger<EventLogger>.GetInstance();
             Assert.Same(instance1, instance1);
             instance1.Counter++;
             Assert.Equal(instance1.Counter, instance2.Counter);
