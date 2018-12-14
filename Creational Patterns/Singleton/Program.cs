@@ -34,6 +34,14 @@ namespace Singleton
             // Lazy instantiation with Nested classes
             Logger7.GetInstance.LogMessage("Lazy instantiation with Nested classes.");
 
+            /***********************************************************************************/
+            //GenericLogger
+            Console.WriteLine("\r\n\r\nGeneric Loggers:");
+            FileLogger fileLoggerInstance = GenericLogger<FileLogger>.GetInstance();
+            fileLoggerInstance.Log("Log a file.");
+
+            EventLogger eventLoggerInstance = GenericLogger<EventLogger>.GetInstance();
+            eventLoggerInstance.Log("Log an Event");
 
             Console.Read();
         }
