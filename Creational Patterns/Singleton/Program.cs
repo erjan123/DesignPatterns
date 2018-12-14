@@ -42,6 +42,13 @@ namespace Singleton
 
             EventLogger eventLoggerInstance = GenericLogger<EventLogger>.GetInstance();
             eventLoggerInstance.Log("Log an event with EventLogger.");
+           
+            /***********************************************************************************/
+
+            Console.WriteLine("\r\n\r\nBadAssSingleton:");
+            BadAssSingleton badAssSingleton = BadAssSingleton.OnlyInstance;
+            badAssSingleton.LogMessage("Log Message.");
+            badAssSingleton.Dispose();
 
             Console.Read();
         }

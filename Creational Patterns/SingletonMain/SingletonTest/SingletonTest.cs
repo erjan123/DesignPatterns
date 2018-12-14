@@ -142,5 +142,17 @@ namespace Tests
             instance2.Counter++;
             Assert.AreEqual(instance1.Counter, instance2.Counter);
         }
+
+        [Test]
+        public void BadAssSingleton10()
+        {
+            BadAssSingleton instance1 = BadAssSingleton.OnlyInstance;
+            BadAssSingleton instance2 = BadAssSingleton.OnlyInstance;
+            Assert.AreSame(instance1, instance2);
+            instance1.Counter++;
+            Assert.AreEqual(instance1.Counter, instance1.Counter);
+            instance2.Counter++;
+            Assert.AreEqual(instance1.Counter, instance2.Counter);
+        }
     }
 }

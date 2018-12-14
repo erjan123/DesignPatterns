@@ -136,5 +136,17 @@ namespace SingletonXUnitTest
             instance2.Counter++;
             Assert.Equal(instance1.Counter, instance2.Counter);
         }
+
+        [Fact]
+        public void BadAssSingleton10()
+        {
+            BadAssSingleton instance1 = BadAssSingleton.OnlyInstance;
+            BadAssSingleton instance2 = BadAssSingleton.OnlyInstance;
+            Assert.Same(instance1, instance1);
+            instance1.Counter++;
+            Assert.Equal(instance1.Counter, instance2.Counter);
+            instance2.Counter++;
+            Assert.Equal(instance1.Counter, instance2.Counter);
+        }
     }
 }
