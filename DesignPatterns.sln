@@ -5,19 +5,19 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{A16DFF28-6330-4610-93D8-3C259896D29C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SOLID", "SOLID", "{0B999BD3-DF05-4C15-B957-740BACAF16A8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.SOLID", "4.SOLID", "{0B999BD3-DF05-4C15-B957-740BACAF16A8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational Patterns", "Creational Patterns", "{D8C36196-4A5D-40D5-A837-31000962098C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Creational Patterns", "1.Creational Patterns", "{D8C36196-4A5D-40D5-A837-31000962098C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural Patterns", "Structural Patterns", "{53D3AEF2-1867-4B98-B865-DFDC2D922574}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Structural Patterns", "2.Structural Patterns", "{53D3AEF2-1867-4B98-B865-DFDC2D922574}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral Patterns", "Behavioral Patterns", "{DB953A5E-CE72-4975-ADC2-2219A5CB656D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Behavioral Patterns", "3.Behavioral Patterns", "{DB953A5E-CE72-4975-ADC2-2219A5CB656D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abstract Factory", "Creational Patterns\Abstract Factory\Abstract Factory.csproj", "{85F8DB7B-85BB-4E44-BE6A-6F9CE3104F5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "Creational Patterns\Abstract Factory\AbstractFactory.csproj", "{85F8DB7B-85BB-4E44-BE6A-6F9CE3104F5F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Creational Patterns\Builder\Builder.csproj", "{D25BD415-398E-4D2D-A926-2CE4BEB485DF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factory Method", "Creational Patterns\Factory Method\Factory Method.csproj", "{6CF1C654-2950-4D66-9A83-9812581A4EC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "Creational Patterns\Factory Method\FactoryMethod.csproj", "{6CF1C654-2950-4D66-9A83-9812581A4EC0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Creational Patterns\Prototype\Prototype.csproj", "{81E74C14-DF6D-4CEA-8464-975A2E1BAE38}"
 EndProject
@@ -37,8 +37,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flyweight", "Structural Pat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proxy", "Structural Patterns\Proxy\Proxy.csproj", "{BA706098-A6EA-4D9B-A3CB-85236BC97F9F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chain of Resp", "Behavioral Patterns\Chain of Resp\Chain of Resp.csproj", "{E0555DE2-B02E-4297-B3F2-9206076FA97E}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Command", "Behavioral Patterns\Command\Command.csproj", "{0937C4AD-19BC-4FA2-9570-ADF6F61083F7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interpreter", "Behavioral Patterns\Interpreter\Interpreter.csproj", "{7D0471AE-CCA0-47E4-93A9-9C0D14290575}"
@@ -55,7 +53,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State", "Behavioral Pattern
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Behavioral Patterns\Strategy\Strategy.csproj", "{2F43CA18-E3D6-47E5-95EB-873CE404F005}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template Method", "Behavioral Patterns\Template Method\Template Method.csproj", "{CAB18FD0-6357-4634-95D0-CDBDDD887D9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "Behavioral Patterns\Template Method\TemplateMethod.csproj", "{CAB18FD0-6357-4634-95D0-CDBDDD887D9F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visitor", "Behavioral Patterns\Visitor\Visitor.csproj", "{C6847A17-A0A2-44BD-9D4B-0CD17CDB47E1}"
 EndProject
@@ -63,15 +61,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solid Design Pattern", "SOL
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{F1D99A58-FF4F-4E2A-A529-1BAEC10CDFFC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abstract Factory", "Abstract Factory", "{8080F055-9E73-4743-ACBD-B324C78AAA5B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AbstractFactory", "AbstractFactory", "{8080F055-9E73-4743-ACBD-B324C78AAA5B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Builder", "Builder", "{2A4F1E2D-EBF6-4995-860C-BD44B6F08F93}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prototype", "Prototype", "{D2446427-7F36-480E-8A3A-BF67A7F28558}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory Method", "Factory Method", "{658E008C-0E26-4808-9910-89167F7FFDBB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FactoryMethod", "FactoryMethod", "{658E008C-0E26-4808-9910-89167F7FFDBB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chain of Resp", "Chain of Resp", "{DC00B2D6-D911-457C-A1F8-C7CC69195CE3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibility", "ChainOfResponsibility", "{DC00B2D6-D911-457C-A1F8-C7CC69195CE3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Command", "Command", "{72289CCE-EA46-411C-8ADF-B457268D675B}"
 EndProject
@@ -89,7 +87,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "State", "State", "{6AB75BBC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy", "Strategy", "{1F524E65-2C69-4576-B8E5-505BC38C39F0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template Method", "Template Method", "{59B396E1-F1D4-46F3-BAD5-4C278F2C122E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TemplateMethod", "TemplateMethod", "{59B396E1-F1D4-46F3-BAD5-4C278F2C122E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visitor", "Visitor", "{E9B092F5-E213-4266-BB8C-DCA62138D212}"
 EndProject
@@ -109,9 +107,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proxy", "Proxy", "{ACA57053
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonNUnitTest", "Creational Patterns\SingletonMain\SingletonTest\SingletonNUnitTest.csproj", "{995E5859-5A13-477F-ACF1-AA8347F6B19E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonMSTest", "Creational Patterns\SingletonMain\SingletonMSTest\SingletonMSTest.csproj", "{1C371911-0AC1-445B-B2A9-3641141B204E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonMSTest", "Creational Patterns\SingletonMain\SingletonMSTest\SingletonMSTest.csproj", "{1C371911-0AC1-445B-B2A9-3641141B204E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonXUnitTest", "Creational Patterns\SingletonMain\SingletonXUnitTest\SingletonXUnitTest.csproj", "{65EF7407-6614-4363-94F8-BC35B1BFBC3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonXUnitTest", "Creational Patterns\SingletonMain\SingletonXUnitTest\SingletonXUnitTest.csproj", "{65EF7407-6614-4363-94F8-BC35B1BFBC3F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibility", "Behavioral Patterns\ChainOfResponsibility\ChainOfResponsibility.csproj", "{5465EA2C-F969-4A2D-8E1C-0A18A2D10929}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,10 +171,6 @@ Global
 		{BA706098-A6EA-4D9B-A3CB-85236BC97F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA706098-A6EA-4D9B-A3CB-85236BC97F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA706098-A6EA-4D9B-A3CB-85236BC97F9F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0555DE2-B02E-4297-B3F2-9206076FA97E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0555DE2-B02E-4297-B3F2-9206076FA97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0555DE2-B02E-4297-B3F2-9206076FA97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0555DE2-B02E-4297-B3F2-9206076FA97E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0937C4AD-19BC-4FA2-9570-ADF6F61083F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0937C4AD-19BC-4FA2-9570-ADF6F61083F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0937C4AD-19BC-4FA2-9570-ADF6F61083F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -231,6 +227,10 @@ Global
 		{65EF7407-6614-4363-94F8-BC35B1BFBC3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65EF7407-6614-4363-94F8-BC35B1BFBC3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65EF7407-6614-4363-94F8-BC35B1BFBC3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5465EA2C-F969-4A2D-8E1C-0A18A2D10929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5465EA2C-F969-4A2D-8E1C-0A18A2D10929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5465EA2C-F969-4A2D-8E1C-0A18A2D10929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5465EA2C-F969-4A2D-8E1C-0A18A2D10929}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -248,7 +248,6 @@ Global
 		{328FB16F-1B8B-4261-9B57-74156063873F} = {84D294A8-ABB4-44BA-A680-27868B34C689}
 		{9A7CCF58-FDB0-47EE-90D9-27FDB608D29D} = {689F618E-919F-403F-9DDA-C68BC767FF58}
 		{BA706098-A6EA-4D9B-A3CB-85236BC97F9F} = {ACA57053-354C-450B-A918-A89A71A0119B}
-		{E0555DE2-B02E-4297-B3F2-9206076FA97E} = {DC00B2D6-D911-457C-A1F8-C7CC69195CE3}
 		{0937C4AD-19BC-4FA2-9570-ADF6F61083F7} = {72289CCE-EA46-411C-8ADF-B457268D675B}
 		{7D0471AE-CCA0-47E4-93A9-9C0D14290575} = {5847547F-2539-4A32-B09F-BC8CC98BC45B}
 		{CABF85E4-302F-4DA2-88C5-105554657930} = {4192839D-44B5-4AED-AED0-7BCD96933B45}
@@ -286,6 +285,7 @@ Global
 		{995E5859-5A13-477F-ACF1-AA8347F6B19E} = {F1D99A58-FF4F-4E2A-A529-1BAEC10CDFFC}
 		{1C371911-0AC1-445B-B2A9-3641141B204E} = {F1D99A58-FF4F-4E2A-A529-1BAEC10CDFFC}
 		{65EF7407-6614-4363-94F8-BC35B1BFBC3F} = {F1D99A58-FF4F-4E2A-A529-1BAEC10CDFFC}
+		{5465EA2C-F969-4A2D-8E1C-0A18A2D10929} = {DC00B2D6-D911-457C-A1F8-C7CC69195CE3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEBB06A5-C46E-4298-96DF-D7D399431343}
