@@ -10,13 +10,12 @@ namespace Prototype
         private string _name;
         private string _danceType;
 
-        public PrototypeDancer1() { }
         public PrototypeDancer1(string name, string danceMaster)
         {
             _name = name;
             _danceType = danceMaster;
         }
-        
+
         public string Name
         {
             get { return _name; }
@@ -35,11 +34,9 @@ namespace Prototype
         }
     }
 
-    // Simple class with different Clone method implemenation and different way to implment
-    // Properties
+    // Simple class with different Clone method implemenation and different way to implment Properties
     public class PrototypeDancer2
     {
-        public PrototypeDancer2() { }
         public PrototypeDancer2(string name, string danceMaster)
         {
             Name = name;
@@ -57,4 +54,33 @@ namespace Prototype
             return MemberwiseClone() as PrototypeDancer2;
         }
     }
+
+    #region PrototypeDancer1 with abstract class
+
+        public abstract class Dancer
+        {
+            public abstract Dancer Clone();
+        }
+
+        public class PrototypeDancer3 : Dancer
+        {
+            public PrototypeDancer3(string name, string danceMaster)
+            {
+                Name = name;
+                DanceType = danceMaster;
+            }
+
+            // No need to declare private field (auto property)
+            // No need to implement get or set like in PropertyDancer1 example
+            public string Name { get; set; }
+            public string DanceType { get; set; }
+
+            public override Dancer Clone()
+            {
+                return MemberwiseClone() as Dancer;
+            }
+        }
+
+    #endregion
+
 }

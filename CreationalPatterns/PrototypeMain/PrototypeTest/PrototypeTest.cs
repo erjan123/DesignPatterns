@@ -16,11 +16,10 @@ namespace Tests
             PrototypeDancer1 salsaDancer = new PrototypeDancer1("Marc", "Salsa");
             PrototypeDancer1 newSalsaDancer = salsaDancer.Clone();
 
-            Assert.AreNotEqual(salsaDancer, newSalsaDancer);
+            Assert.AreNotSame(salsaDancer, newSalsaDancer);
             newSalsaDancer.Name = "Tom";
 
             Assert.AreNotEqual(salsaDancer.Name, newSalsaDancer.Name);
-            Assert.Pass();
         }
 
         [Test]
@@ -29,11 +28,22 @@ namespace Tests
             PrototypeDancer2 salsaDancer = new PrototypeDancer2("Marc Anthony", "Salsa");
             PrototypeDancer2 newSalsaDancer = salsaDancer.Clone();
 
-            Assert.AreNotEqual(salsaDancer, newSalsaDancer);
+            Assert.AreNotSame(salsaDancer, newSalsaDancer);
             newSalsaDancer.Name = "Brad Pitt";
 
             Assert.AreNotEqual(salsaDancer.Name, newSalsaDancer.Name);
-            Assert.Pass();
+        }
+
+        [Test]
+        public void PrototypeDancer3_Abstract_Class_Test_Clone()
+        {
+            PrototypeDancer3 ballroomDancer = new PrototypeDancer3("Kate", "Waltz");
+            PrototypeDancer3 foxtrotDancer = ballroomDancer.Clone() as PrototypeDancer3;
+
+            Assert.AreNotSame(ballroomDancer, foxtrotDancer);
+            foxtrotDancer.DanceType = "Foxtrot";
+
+            Assert.AreNotEqual(ballroomDancer, foxtrotDancer);
         }
     }
 }
