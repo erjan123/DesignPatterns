@@ -6,4 +6,8 @@
     <RootNamespace>Factory_Method</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Simple Factory\" />
+  </ItemGroup>
+
 </Project>
