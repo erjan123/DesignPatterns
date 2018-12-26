@@ -7,7 +7,11 @@ namespace SimpleFactory.SimpleFactory1
     public class Mobile
     {
         public string Name { get; set; }
-        
+
+        public Mobile()
+        {
+            Name = "Just Testing";
+        }
         public void ScreenSize()
         {
             Console.WriteLine("320 x 480 pixels");

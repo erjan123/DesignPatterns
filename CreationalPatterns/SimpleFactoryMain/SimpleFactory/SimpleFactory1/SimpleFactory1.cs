@@ -6,7 +6,7 @@ namespace SimpleFactory.SimpleFactory1
 {
     public class SimpleFactory1
     {
-        public object GetScreenSize(Enum deviceSize)
+        public object GetScreenSize(DeviceType deviceSize)
         {
             switch (deviceSize)
             {
