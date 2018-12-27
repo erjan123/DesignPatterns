@@ -161,9 +161,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolidTest", "SolidMain\Soli
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.SimpleFactory", "3.SimpleFactory", "{D58FB85D-868B-4B1C-8749-D9F1E1974E2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "CreationalPatterns\SimpleFactoryMain\SimpleFactory\SimpleFactory.csproj", "{A1E633FC-1B22-41F4-9992-EC4DA79E72D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFactory", "CreationalPatterns\SimpleFactoryMain\SimpleFactory\SimpleFactory.csproj", "{A1E633FC-1B22-41F4-9992-EC4DA79E72D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactoryTest", "CreationalPatterns\SimpleFactoryMain\SimpleFactoryTest\SimpleFactoryTest.csproj", "{F55759C6-B7EB-4A3B-AA4E-00066D9A3568}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFactoryTest", "CreationalPatterns\SimpleFactoryMain\SimpleFactoryTest\SimpleFactoryTest.csproj", "{F55759C6-B7EB-4A3B-AA4E-00066D9A3568}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoDecorator", "StructuralPatterns\DecoratorMain\PhotoDecorator\PhotoDecorator.csproj", "{442529C1-F631-4419-8BF0-0312586B523E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -383,6 +385,10 @@ Global
 		{F55759C6-B7EB-4A3B-AA4E-00066D9A3568}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F55759C6-B7EB-4A3B-AA4E-00066D9A3568}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F55759C6-B7EB-4A3B-AA4E-00066D9A3568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{442529C1-F631-4419-8BF0-0312586B523E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{442529C1-F631-4419-8BF0-0312586B523E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{442529C1-F631-4419-8BF0-0312586B523E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{442529C1-F631-4419-8BF0-0312586B523E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -464,6 +470,7 @@ Global
 		{D58FB85D-868B-4B1C-8749-D9F1E1974E2F} = {D8C36196-4A5D-40D5-A837-31000962098C}
 		{A1E633FC-1B22-41F4-9992-EC4DA79E72D7} = {D58FB85D-868B-4B1C-8749-D9F1E1974E2F}
 		{F55759C6-B7EB-4A3B-AA4E-00066D9A3568} = {D58FB85D-868B-4B1C-8749-D9F1E1974E2F}
+		{442529C1-F631-4419-8BF0-0312586B523E} = {619192D8-14F7-4C0F-AD87-13E7C99A7799}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEBB06A5-C46E-4298-96DF-D7D399431343}
