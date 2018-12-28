@@ -20,6 +20,8 @@ namespace Proxy
 
             #region 
 
+            SpaceBookSystem.Run();
+
             #endregion
         }
     }

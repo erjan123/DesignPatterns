@@ -1,4 +1,5 @@
 ﻿using System;
+using static SubjectAccessor;
 
 namespace ProxyTheoreticalExample
 {
@@ -8,7 +9,7 @@ namespace ProxyTheoreticalExample
         {
             Console.WriteLine("Proxy Pattern\n");
 
-            SubjectAccessor.ISubject subject = new SubjectAccessor.Proxy();
+            ISubject subject = new SubjectAccessor.Proxy();
             Console.WriteLine(subject.Request());
             Console.WriteLine(subject.Request());
             Console.WriteLine();
