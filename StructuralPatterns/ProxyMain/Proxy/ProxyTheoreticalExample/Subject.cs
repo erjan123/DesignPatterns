@@ -1,6 +1,6 @@
 ﻿partial class SubjectAccessor
 {
-    public class Subject
+    private class Subject
     {
         public string Request()
         {
