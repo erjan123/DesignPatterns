@@ -1,12 +1,26 @@
-﻿using System;
+﻿using ProxyTheoreticalExample;
 
 namespace Proxy
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            #region Proxy Example
+
+                ProxyClientCode.Run();
+
+            #endregion
+
+            #region Protection Proxy Example
+
+            ProtectionProxyClientCode.Run();
+
+            #endregion
+
+            #region 
+
+            #endregion
         }
     }
 }
