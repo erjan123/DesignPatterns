@@ -9,6 +9,7 @@
             {
                 bridge = implementation;
             }
+
             public string Operation()
             {
                 return "Abstraction" + " <<< BRIDGE >>>> " + bridge.OperationImp();

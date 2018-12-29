@@ -19,6 +19,10 @@ namespace Bridge.TheoreticalBrideExample
             Console.WriteLine(abstraction1.Operation());
             var abstraction2 = new Abstraction(implementationB);
             Console.WriteLine(abstraction2.Operation());
+
+            Console.WriteLine();
+            Console.WriteLine("******************************************");
+            Console.WriteLine();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Bridge.TheoreticalBrideExample;
+using DoFactory.GangOfFour.Bridge.Structural;
 using System;
 
 namespace Bridge
@@ -10,6 +11,12 @@ namespace Bridge
             #region Theoretical Bridge Example
 
                 BridgePattern.Run();
+
+            #endregion
+
+            #region
+
+                GoFTheoreticalBridgeClient.Run();
 
             #endregion
 
