@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bridge.TheoreticalBrideExample;
+using System;
 
 namespace Bridge
 {
@@ -6,7 +7,13 @@ namespace Bridge
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            #region Theoretical Bridge Example
+
+                BridgePattern.Run();
+
+            #endregion
+
+            Console.Read();
         }
     }
 }
