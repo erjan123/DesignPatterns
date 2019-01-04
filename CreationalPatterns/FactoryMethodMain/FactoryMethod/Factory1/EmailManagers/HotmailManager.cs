@@ -12,6 +12,7 @@ namespace FactoryMethod.EmailManagers
 
         public HotmailManager()
         {
+            Console.WriteLine("Creating HotmailEmailService");
             emailService = new HotmailEmailService();
         }
 

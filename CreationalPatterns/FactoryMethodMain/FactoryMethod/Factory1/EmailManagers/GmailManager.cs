@@ -10,6 +10,7 @@ namespace FactoryMethod.EmailManagers
 
         public GmailManager()
         {
+            Console.WriteLine("Creating GmailEmailService");
             emailService = new GmailEmailService();
         }
 

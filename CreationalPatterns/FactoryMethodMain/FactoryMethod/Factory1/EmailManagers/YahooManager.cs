@@ -10,6 +10,7 @@ namespace FactoryMethod.EmailManagers
 
         public YahooManager()
         {
+            Console.WriteLine("Creating YahooEmailService");
             emailService = new YahooEmailService();
         }
 
