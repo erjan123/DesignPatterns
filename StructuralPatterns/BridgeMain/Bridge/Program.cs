@@ -1,6 +1,7 @@
 ﻿using Bridge.TheoreticalBrideExample;
 using DoFactory.GangOfFour.Bridge.Structural;
 using System;
+using Bridge.OpenBook;
 
 namespace Bridge
 {
@@ -11,12 +12,18 @@ namespace Bridge
             #region Theoretical Bridge Example
 
                 BridgePattern.Run();
+           
+            #endregion
+
+            #region Gang Of Four Bridge Structural
+
+                GoFTheoreticalBridgeClient.Run();
 
             #endregion
 
-            #region
+            #region Open Book Bridge Pattern
 
-                GoFTheoreticalBridgeClient.Run();
+                OpenBookBridgePattern.Run();
 
             #endregion
 

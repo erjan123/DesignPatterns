@@ -4,7 +4,7 @@ namespace DoFactory.GangOfFour.Bridge.Structural
 {
     /// <summary>
     /// MainApp startup class for Structural
-    /// Bridge Design Pattern.
+    /// IBridge Design Pattern.
     /// </summary>
     public class GoFTheoreticalBridgeClient
     {
@@ -13,7 +13,7 @@ namespace DoFactory.GangOfFour.Bridge.Structural
         /// </summary>
         public static void Run()
         {
-            Console.WriteLine("DoFactory GangOfFour Bridge Structural example.");
+            Console.WriteLine("DoFactory GangOfFour IBridge Structural example.");
             Console.WriteLine();
 
             Abstraction ab = new RefinedAbstraction();

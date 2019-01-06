@@ -9,7 +9,7 @@ namespace Bridge.TheoreticalBrideExample
 
         public static void Run()
         {
-            Console.WriteLine("Bridge Pattern\n");
+            Console.WriteLine("IBridge Pattern\n");
             //Console.WriteLine(new Abstraction(new ImplementationA()).Operation());
             //Console.WriteLine(new Abstraction(new ImplementationB()).Operation());
             IBridge implementationA = new ImplementationA();
