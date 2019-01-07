@@ -45,7 +45,7 @@ namespace Prototype
                 DanceType = danceType;
             }
 
-            // No need to declare private field (auto property)
+            // No need to declare private fields (auto property)
             // No need to implement get or set like in PropertyDancer1 example
             public string Name { get; set; }
             public string DanceType { get; set; }
