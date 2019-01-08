@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Builder.Builder;
+using System;
 
 namespace Builder
 {
@@ -6,7 +7,13 @@ namespace Builder
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            #region Builder Example
+
+            BuilderExample.Run();
+
+            #endregion
+
+            Console.ReadLine();
         }
     }
 }
