@@ -5,7 +5,7 @@ using System.Text;
 namespace Singleton
 {
     // Basically this Singleton is same as double check locking
-    // However, using "volatile" on onlyInstance makes it real thread save
+    // However, using static "volatile" on onlyInstance makes it real thread save
     // IDisposable is not part of Singleton but Microsoft recommends to 
     // method that will dispose the instance
     public sealed class BadAssSingleton: IDisposable

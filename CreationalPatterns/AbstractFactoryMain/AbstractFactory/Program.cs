@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AbstractFactoryPattern;
+using System;
 
 namespace Abstract_Factory
 {
@@ -6,7 +7,14 @@ namespace Abstract_Factory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+
+            #region Abstract Factory Pattern
+
+                AbstractFactory.Run();
+
+            #endregion Abstract Factory Pattern
+
+            Console.WriteLine();
+        }     
     }
 }
