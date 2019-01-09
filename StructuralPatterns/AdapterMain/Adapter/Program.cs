@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Adapter.AdapterTheoreticalExample;
+using System;
 
 namespace Adapter
 {
@@ -6,7 +7,13 @@ namespace Adapter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            #region
+
+                AdapterClient.Run();
+
+            #endregion
+
+            Console.Read();
         }
     }
 }
