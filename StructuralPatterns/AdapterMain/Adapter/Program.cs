@@ -1,4 +1,5 @@
 ﻿using Adapter.AdapterTheoreticalExample;
+using Adapter.TwoWayAdapterPattern;
 using System;
 
 namespace Adapter
@@ -7,9 +8,15 @@ namespace Adapter
     {
         static void Main(string[] args)
         {
-            #region
+            #region Theoretical Adapter Pattern Example
 
                 AdapterClient.Run();
+
+            #endregion
+
+            #region Two Way Adapter Pattern Example 
+
+            TwoWayAdapter.Run();
 
             #endregion
 
