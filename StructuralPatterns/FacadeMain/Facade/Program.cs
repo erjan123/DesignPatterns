@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Facade.GoFTheoreticalExample;
+using System;
 
 namespace Facade
 {
@@ -6,7 +7,14 @@ namespace Facade
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            #region Gang of Four Structural Facade Example
+
+            Console.WriteLine("Gang of Four Structural Facade Example");
+                GoFTheoreticalFacadeExample.Run();
+
+            #endregion
+
+            Console.Read();
         }
     }
 }
