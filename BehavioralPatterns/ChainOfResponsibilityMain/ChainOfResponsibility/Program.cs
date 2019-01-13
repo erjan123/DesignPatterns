@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoFactory.GangOfFour.ChainOfResponsibility.Structural;
+using System;
 
 namespace Chain_of_Resp
 {
@@ -6,7 +7,11 @@ namespace Chain_of_Resp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            #region Chain Of Responsibility Structural
+
+            ChainOfResponsibilityStructural.Run();
+
+            #endregion
         }
     }
 }
