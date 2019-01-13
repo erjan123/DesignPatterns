@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using System;
 
 namespace DoFactory.GangOfFour.ChainOfResponsibility.Structural
 {
@@ -32,8 +28,9 @@ namespace DoFactory.GangOfFour.ChainOfResponsibility.Structural
                 h1.HandleRequest(request);
             }
 
-            // Wait for user
-            Console.ReadKey();
+            Console.WriteLine();
+            Console.WriteLine("******************************************");
+            Console.WriteLine();
         }
     }
 }

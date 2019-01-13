@@ -1,4 +1,5 @@
-﻿using DoFactory.GangOfFour.ChainOfResponsibility.Structural;
+﻿using Chain_of_Resp.ChainOfResponsibilityTheoretical;
+using DoFactory.GangOfFour.ChainOfResponsibility.Structural;
 using System;
 
 namespace Chain_of_Resp
@@ -9,7 +10,17 @@ namespace Chain_of_Resp
         {
             #region Chain Of Responsibility Structural
 
-            ChainOfResponsibilityStructural.Run();
+                Console.WriteLine("Chain Of Responsibility Structural");
+                Console.WriteLine();
+                ChainOfResponsibilityStructural.Run();
+
+            #endregion
+
+            #region Chain with State Pattern Theoretical
+
+            Console.WriteLine("Chain with State Pattern Theoretical");
+            Console.WriteLine();
+            ChainwithStatePattern.Run();
 
             #endregion
         }
