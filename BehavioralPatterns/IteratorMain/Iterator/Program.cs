@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoFactory.GangOfFour.Iterator.Structural;
+using System;
 
 namespace Iterator
 {
@@ -6,7 +7,14 @@ namespace Iterator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            #region GangOfFourIteratorStructural
+
+                Console.WriteLine("Gang Of Four Iterator Structural");
+                GangOfFourIteratorStructural.Run();
+
+            #endregion
+
+            Console.Read();
         }
     }
 }
