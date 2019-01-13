@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Command.CommandWithDelegate;
+using Command.GoFCommandStructural;
+using System;
 
 namespace Command
 {
@@ -6,7 +8,21 @@ namespace Command
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            #region GoF Command Client 
+
+                Console.WriteLine("GoF Command Client");
+                GoFCommandClientCode.Run();
+
+            #endregion
+
+            #region Command With Delegate 
+
+            Console.WriteLine("Command With Delegate");
+            CommandWithDelegateClientCode.Run();
+
+            #endregion
+
+            Console.Read();
         }
     }
 }
