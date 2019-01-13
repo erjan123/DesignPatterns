@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoFactory.GangOfFour.Flyweight.Structural;
+using System;
 
 namespace Flyweight
 {
@@ -6,7 +7,11 @@ namespace Flyweight
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+            #region
+
+                GangOfFourFlyweightStructural.Run();
+
+            #endregion
     }
+}
 }
