@@ -1,5 +1,6 @@
 ﻿using DoFactory.GangOfFour.Visitor.Structural;
 using System;
+using VistitorTheoreticalExampleClientCode;
 
 namespace Visitor
 {
@@ -14,6 +15,12 @@ namespace Visitor
 
             #endregion
 
+            #region
+
+            Console.WriteLine("Vistitor Theoretical Example");
+            VistitorTheoreticalExample.Run();
+
+            #endregion
 
             Console.Read();
         }
